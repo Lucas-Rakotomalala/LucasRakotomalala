@@ -505,6 +505,10 @@ input[type="submit"]:hover{
         font-size: 1.7rem;
     }
 
+    .menu-toggler{
+        right: 15px;
+    }
+
     .nav-list{
         flex-direction: column;
     }

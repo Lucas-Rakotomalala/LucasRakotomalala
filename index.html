@@ -49,10 +49,10 @@
 
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
                 <img src="Images/avatar-gratuit (1).png" alt="">
             </div>
-            <div class="about-details">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="300">
                 <div class="about-heading">
                     <h1>A Propos</h1>
                     <h6>De moi</h6>
@@ -88,7 +88,7 @@
                 <h6>Ce que je peux faire pour vous</h6>
             </div>
             <div class="my-skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
                     <div class="icon-container">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -98,7 +98,7 @@
                         L
                     </p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
                     <div class="icon-container">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -120,11 +120,11 @@
                 <h6>Visualisez mes anciens projets</h6>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">
+                <div class="portfolio-img" data-aos="fade-right" data-aos-delay="300">
                     <img src="Images/portitem1.jpeg" alt="">
                     <! Image à chnager -->
                 </div>
-                <div class="portfolio-description has-margin-left">
+                <div class="portfolio-description has-margin-left" data-aos="fade-left" data-aos-delay="600">
                     <h6>Développpement Web</h6>
                     <h1>Page Personnelle</h1>
                     <p>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-description has-margin-right">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
                     <h6>Application Mobile</h6>
                     <h1>Application Android et IOs</h1>
                     <p>
@@ -153,7 +153,7 @@
                     </p>
                     <a href="#" class="cta">View detail</a>
                 </div>
-                <div class="portfolio-img">
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
                     <img src="Images/portitem2.jpeg" alt="">
                     <! Image à chnager -->
                 </div>
@@ -167,7 +167,7 @@
                 <h1>Expériences</h1>
                 <h6>Postes Occupés</h6>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <li class="date" data-date="2011-Present">
                         <h1>Google</h1>
@@ -225,15 +225,16 @@
                 <h1>Contact</h1>
                 <h6>Contactez moi pour une demande</h6>
             </div>
-            <form action="">
+            <form action="#" onsubmit="temp()" method="POST" enctype="text/plain" data-aos="fade-up"
+                data-aos-delay="300" id="form">
                 <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
                 <label for="services">Services:</label>
                 <select name="services" id="services">
-                    <option value="">Développpement Web</option>
-                    <option value="">Application Mobile</option>
+                    <option value="Developppement Web">Développpement Web</option>
+                    <option value="Application Mobile">Application Mobile</option>
                 </select>
                 <label for="subject">Commentaire:</label>
                 <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
