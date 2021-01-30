@@ -29,9 +29,23 @@ $(document).ready(function () {
 
 });
 
-function temp() {
-    document.getElementById('form').action = "mailto:lucas.rakotomalala35@gmail.com?subject=Demande%20de%20services&body=Bonjour%20Monsieur%2C%20%0A%0AVoici%20ma%20demande%20de%20service%3A%0A%20" //+ document.getElementById('services').Value;
-}
+function test() {
+    var body_message = document.getElementById('subject').value;
+    var uribody = encodeURI(body_message);
+    var emaiil = 'lucas.rakotomalala@gmail.com';
+    var subject = 'Demande de service ';
+    var servivce = document.getElementById('Services').value;
+    var tete = "Bonjour Monsieur Rakatomalala \r\n\r\n";
+    var uritete = encodeURIComponent(tete);
+    var email_user = document.getElementById('email').value;
+    var nom = document.getElementById('name').value;
+    var urinom = encodeURI(nom);
+    var urisaut = encodeURI('\r\n');
 
+
+    var mailto_link = "mailto:" + emaiil + '?subject=' + subject + servivce + '&body=' + uritete + uribody + urisaut + 'Vous pouvez me contacter à l\'adresse suivante: ' + email_user + urisaut + urisaut + 'Cordialement' + urisaut + urisaut + urinom;
+    window.open(mailto_link);
+
+};
 
 
